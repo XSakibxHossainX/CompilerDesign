@@ -1,0 +1,17 @@
+package com.testing.hello;
+
+import java.util.Scanner;
+
+import static java.lang.System.out;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String identifier;
+        identifier = scan.next();
+
+      if(identifier.matches("[a-z|A-Z|_][a-z|A-Z|_|0-9|$]*")){out.println("Valid Identifier");}
+      else{out.println("Invalid Identifier");}
+
+    }
+}
